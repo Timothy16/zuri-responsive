@@ -5,8 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
-
+body{
+    /* overflow: hidden; */
+}
 div.nav-bar {
     display: flex;
     justify-content: space-between;
@@ -344,4 +347,68 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+@media screen and (max-width : 578px) {
+    div.nav-bar {
+        padding: 1rem .1rem;
+    }
+    ul li {
+        margin: .8vw .1vw;
+        list-style: none;
+        font-size: 1.1rem;
+    }
+    div.hero-section {
+        padding: 1.5rem;
+    }
+    div.hero-content-heading h3{
+        font-size: 1.3rem;
+    }
+    div.hero-background{
+        padding: 1.5rem;
+    }
+    div.background h4{
+        padding: 0;
+        text-align: center;
+    }
+    div.background p{
+        padding-left: 0;
+        margin-top: .3rem;
+    }
+    div.hero-background-pos{
+        display: none;
+    }
+    div.background{
+        height: auto;
+        /* width: 100%; */
+    }
+    div.snapshot-box-content{
+        display: block;
+    }
+    div.snapshot-box{
+        padding: 0;
+    }
+    div.gallery-section{
+        padding: 1.5rem;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    input[type="email"]{
+        width: 100%;
+        margin-top: .5rem;
+    }
+    div.footer-input{
+        display: block;
+    }
+    textarea{
+        width: 100%;
+    }
+    div.footer-textarea{
+        display: block;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1024px){
+    div.hero-background-pos{
+        left : 73%;
+    }
 }
